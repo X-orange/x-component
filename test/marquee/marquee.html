@@ -1,0 +1,31 @@
+<view class="marquee" >
+  <text>1显示完后再显示</text>
+  <view class="example" >
+    <view class="marqueeBox">
+      <view class="marqueeText" style="{{orientation}}:{{marqueeDistance}}px;font-size:{{size}}px;">{{text}}</view>
+    </view>
+  </view>
+  <text>2出现白边后即显示</text>
+  <view class="example">
+    <view class="marqueeBox">
+      <view class="marqueeText" style="{{orientation}}:{{marqueeDistance}}px;font-size:{{size}}px;">
+        <text>{{text}}</text>
+        <text wx:if="{{marquee2copyStatus}}" style="margin-left:{{marquee2Margin}}px;">{{text}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!--简单的样式.example {
+  display: block;
+  width: 100%;
+  height: 100rpx;
+}
+.marquee_box {
+  width: 100%;
+  position: relative;
+}
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+}  -->
